@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Technical Documentation Page</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+	<nav id="navbar">
+		<header>HTML Documentation</header>
+		<ul>
+		<a href="#Introduction" class="nav-link">
+			<li>Introduction</li>
+		</a>
+		<a href="#Basic_Examples" class="nav-link">
+			<li>Basic Examples</li>
+		</a>
+		<a href="#Elements" class="nav-link">
+			<li>Elements</li>
+		</a>
+		<a href="#Attributes" class="nav-link">
+			<li>Attributes</li>
+		</a>
+		<a href="#Headings" class="nav-link">
+			<li>Headings</li>
+		</a>
+		</a>
+		<a href="#Styles" class="nav-link">
+			<li>Styles</li>
+		</a>
+		<a href="#Formatting" class="nav-link">
+			<li>Formatting</li>
+		</a>
+		<a href="#Quotations" class="nav-link">
+			<li>Quotations</li>
+		</a>
+		<a href="#Comments" class="nav-link">
+			<li>Comments</li>
+		</a>
+		<a href="#Colors" class="nav-link">
+			<li>Colors</li>
+		</a>
+		<a href="#CSS" class="nav-link">
+			<li>CSS</li>
+		</a>
+		<a href="#Links" class="nav-link">
+			<li>Links</li>
+		</a>
+		<a href="#Images" class="nav-link">
+			<li>Images</li>
+		</a>
+		<a href="#Reference" class="nav-link">
+			<li>Reference</li>
+		</a>
+	</nav>
+	<main id="main-doc">
+		<section class="main-section" id="Introduction">
+			<header>Introduction</header><hr>
+			<article>
+        <code></code>
+				<p>HTML is the standard markup language for creating Web pages.</p>
+					<li>HTML stands for Hyper Text Markup Language</li>
+					<li>HTML describes the structure of Web pages using markup</li>
+					<li>HTML elements are the building blocks of HTML pages</li>
+					<li>HTML elements are represented by tags</li>
+					<li>HTML tags label pieces of content such as "heading", "paragraph", "table", and so on</li>
+					<li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+					<p>NOTE: You will be able to see a lot of html examples by clicking the "See an example" button. Try playing with the html examples by changing the syntax of the code and see what the result will be.</p>
+					<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_intro')">See an example</button>
+					<p class="small-header">HTML Tags</p>
+					<p>HTML tags are element names surrounded by angle brackets:</p>
+					<xmp><tagname>content goes here...</tagname></xmp>
+					<li>HTML tags normally come in pairs like <span class="small-code">&lt;p&gt;</span> and <span class="small-code">&lt;/p&gt;</span></li>
+					<li>The first tag in a pair is the start tag, the second tag is the end tag</li>
+					<li>The end tag is written like the start tag, but with a forward slash inserted before the tag name</li>
+					<p class="tip">Tip: The start tag is also called the opening tag, and the end tag the closing tag.</p>
+					<p class="small-header">Web Browsers</p>
+					<p>The purpose of a web browser (Chrome, IE, Firefox, Safari) is to read HTML documents and display them.
+					</p>
+					<p>The browser does not display the HTML tags, but uses them to determine how to display the document:</p>
+					<img style="margin-bottom: 10px" src="https://www.w3schools.com/html/img_chrome.png" alt="">
+					<p class="small-header">HTML Page Structure</p>
+					<p>Below is a visualization of an HTML page structure:</p>
+					<div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd;">&lt;html&gt;
+					<div style="width:90%;border:1px solid grey;padding:3px;margin:20px">&lt;head&gt;
+					<div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;title&gt;Page title&lt;/title&gt;
+					</div>
+					&lt;/head&gt;
+					</div>
+					<div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd">&lt;body&gt;
+					<div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+					<div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;h1&gt;This is a heading&lt;/h1&gt;</div>
+					<div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is a paragraph.&lt;/p&gt;</div>
+					<div style="width:90%;border:1px solid grey;padding:5px;margin:20px">&lt;p&gt;This is another paragraph.&lt;/p&gt;</div>
+					</div>
+					&lt;/body&gt;
+					</div>
+					&lt;/html&gt;
+					</div>
+					<p class="tip">Note: Only the content inside the &lt;body&gt; section (the white area above) is displayed in a browser.</p>
+					<p class="small-header">The &lt;!DOCTYPE&gt; Declaration</p>
+					<p>The <span class="small-code">&lt;!DOCTYPE&gt;</span> declaration represents the document type, and helps browsers to display web pages correctly.</p>
+					<p>The <span class="small-code">&lt;!DOCTYPE&gt;</span> declaration is not case sensitive.</p>
+					<p>The <span class="small-code">&lt;!DOCTYPE&gt;</span>  declaration for HTML5 is:</p>
+					<p class="tip-green">&lt;!DOCTYPE html&gt;</p>
+			</article>
+		</section>
+		<section class="main-section" id="Basic_Examples">
+			<header>Basic Examples</header><hr>
+			<article>
+        <code></code>
+				<p class="small-header">HTML Documents</p>
+				<p>All HTML documents must start with a document type declaration: <span class="small-code" style="color: red;">&lt;!DOCTYPE html&gt;</span></p>
+				<p>The HTML document itself begins with <span class="small-code" style="color: red;">&lt;html&gt;</span> and ends with <span class="small-code" style="color: red;">&lt;/html&gt;</span>.</p>
+				<p>The visible part of the HTML document is between <span class="small-code" style="color: red;">&lt;body&gt;</span> and <span class="small-code" style="color: red;">&lt;/body&gt;</span>.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_document')">See an example</button>
+				<p class="small-header">HTML Headings</p>
+				<p>HTML paragraphs are defined with the <span class="small-code" style="color: red;">&lt;p&gt;</span> tag.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_paragraphs')">See an example</button>
+				<p class="small-header">HTML Links</p>
+				<p>HTML links are defined with the <span class="small-code" style="color: red;">&lt;a&gt;</span> tag.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_link')">See an example</button>
+				<p>The link's destination is specified in the <span class="small-code" style="color: red;">href</span> attribute. </p>
+				<p>Attributes are used to provide additional information about HTML elements.</p>
+				<p>You will learn more about attributes in a later chapter.</p>
+				<p class="small-header">HTML Images</p>
+				<p>HTML images are defined with the <span class="small-code" style="color: red;">&lt;img&gt;</span> tag.</p>
+				<p>The source file (<span class="small-code" style="color: red;">src</span>), alternative text (<span class="small-code" style="color: red;">alt</span>), <span class="small-code" style="color: red;">width</span>, and <span class="small-code" style="color: red;">height</span> are provided as attributes:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_basic_img')">See an example</button>
+				<p class="small-header">HTML Buttons</p>
+				<p>HTML buttons are defined with the <span class="small-code" style="color: red;">&lt;button&gt;</span> tag:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_button_basic')">See an example</button>
+				<p class="small-header">HTML Lists</p>
+				<p>HTML lists are defined with the <span class="small-code" style="color: red;">&lt;ul&gt;</span> (unordered/bullet list) or the <span class="small-code" style="color: red;">&lt;ol&gt;</span> (ordered/numbered list) tag, followed by <span class="small-code" style="color: red;">&lt;li&gt;</span> tags (list items)</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_lists_intro')">See an example</button>
+			</article>
+		</section>
+		<section class="main-section" id="Elements">
+			<header>Elements</header><hr>
+			<article>
+        <code></code>
+				<p class="small-header">HTML Elements</p>
+				<p>An HTML element usually consists of a start tag and end tag, with the content inserted in between:</p>
+				<xmp><tagname>content goes here...</tagname></xmp>
+				<p>The HTML element is everything from the start tag to the end tag:</p>
+				<xmp><p>My first paragraph.</p></xmp>
+				<p class="tip">HTML elements with no content are called empty elements. Empty elements do not have an end tag, such as the <span class="small-code" style="color: red;">&lt;br&gt;</span> element (which indicates a line break).</p>
+				<p class="small-header">Nested HTML Elements</p>
+				<p>HTML elements can be nested (elements can contain elements).</p>
+				<p>All HTML documents consist of nested HTML elements.</p>
+				<p>This example contains four HTML elements:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements')">See an example</button>
+				<p class="small-header">Do Not Forget the End Tag</p>
+				<p>Some HTML elements will display correctly, even if you forget the end tag:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_no_endtag')">See an example</button>
+				<p>The example above works in all browsers, because the closing tag is considered optional.</p>
+				<p style="font-weight: bold;">Never rely on this. It might produce unexpected results and/or errors if you forget the end tag.</p>
+				<p class="small-header">Empty HTML Elements</p>
+				<p>HTML elements with no content are called empty elements.</p>
+				<p><span class="small-code" style="color: red;">&lt;br&gt;</span> is an empty element without a closing tag (the <span class="small-code" style="color: red;">&lt;br&gt;</span> tag defines a line break):</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_elements_br')">See an example</button>
+			    <p>Empty elements can be "closed" in the opening tag like this: &lt;br /&gt;</p>
+			    <p>HTML5 does not require empty elements to be closed. But if you want stricter validation, or if you need to make your document readable by XML parsers, you must close all HTML elements properly.</p>
+			    <p class="small-header">Use Lowercase Tags</p>
+			    <p>HTML tags are not case sensitive: &lt;P&gt; means the same as &lt;p&gt;.</p>
+			    <p>The HTML5 standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document types like XHTML.</p>
+			    <p class="tip"><a href="https://www.w3schools.com/default.asp" style="text-decoration: none;" target="_blank">W3Schools</a> recommends to always use lowercase tags.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Attributes">
+			<header>Attributes</header><hr>
+			<article>
+        <code></code>
+				<p>Attributes provide additional information about HTML elements.</p>
+				<li>All HTML elements can have <strong>attributes</strong></li>
+				<li>Attributes provide <strong>additional information</strong> about an element</li>
+				<li>Attributes are always specified in <strong>the start tag</strong></li>
+				<li>Attributes usually come in name/value pairs like: <strong>name="value"</strong></li>
+				<p class="small-header">The href Attribute</p>
+				<p>HTML links are defined with the <span class="small-code" style="color: red;">&lt;a&gt;</span> tag. The link address is specified in the <span class="small-code" style="color: red;">href</span> attribute.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_link')">See an example</button>
+				<p class="small-header">The src Attribute</p>
+				<p>HTML images are defined with the <span class="small-code" style="color: red;">&lt;img&gt;</span> tag.</p> 
+				<p>The filename of the image source is specified in the <span class="small-code" style="color: red;">src</span> attribute:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_img_src')">See an example</button>
+				<p class="small-header">The width and height Attributes</p>
+				<p>mages in HTML have a set of size attributes, which specifies the width and height of the image:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_img')">See an example</button>
+				<p>The image size is specified in pixels: width="500" means 500 pixels wide.</p>
+				<p class="small-header">The alt Attribute</p>
+				<p>The <span class="small-code" style="color: red;">alt</span> attribute specifies an alternative text to be used, when an image cannot be displayed.</p>
+				<p>The value of the attribute can be read by screen readers. This way, someone "listening" to the webpage, e.g. a vision impaired person, can "hear" the element.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_alt')">See an example</button>
+				<p class="tip">The alt attribute is also useful if the image does not exist:</p>
+				<p>See what happens if we try to display an image that does not exist:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_alt_error')">See an example</button>
+				<p class="small-header">The style Attribute</p>
+				<p>The <span class="small-code" style="color: red;">style</span> attribute is used to specify the styling of an element, like color, font, size etc.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_style')">See an example</button>
+				<p class="small-header">The lang Attribute</p>
+				<p>The language of the document can be declared in the <span class="small-code" style="color: red;">&lt;html&gt;</span> tag.</p>
+				<p>The language is declared with the <span class="small-code" style="color: red;">lang</span> attribute.</p>
+				<p>Declaring a language is important for accessibility applications (screen readers) and search engines:</p>
+				<xmp>
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+...
+
+</body>
+</html>					
+				</xmp>
+				<p>The first two letters specify the language (en). If there is a dialect, use two more letters (US).</p>
+				<p class="small-header">The title Attribute</p>
+				<p>Here, a <span class="small-code" style="color: red;">title</span> attribute is added to the <span class="small-code" style="color: red;">&lt;p&gt;</span> element. The value of the title attribute will be displayed as a tooltip when you mouse over the paragraph:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_attributes_title')">See an example</button>
+			</article>
+		</section>
+    <code></code>
+		<section class="main-section" id="Headings">
+			<header>Headings</header><hr>
+			<article>
+				<p>Headings are defined with the <span class="small-code" style="color: red;">&lt;h1&gt;</span> to <span class="small-code" style="color: red;">&lt;h6&gt;</span> tags.</p>
+				<p><span class="small-code" style="color: red;">&lt;h1&gt;</span> defines the most important heading. <span class="small-code" style="color: red;">&lt;h6&gt;</span> defines the least important heading.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings')">See an example</button>
+				<p class="tip">Note: Browsers automatically add some white space (a margin) before and after a heading.</p>
+				<p class="small-header">Headings Are Important</p>
+				<p>Search engines use the headings to index the structure and content of your web pages.</p>
+				<p>Users skim your pages by its headings. It is important to use headings to show the document structure.</p>
+				<p><span class="small-code" style="color: red;">&lt;h1&gt;</span> headings should be used for main headings, followed by <span class="small-code" style="color: red;">&lt;h2&gt;</span> headings, then the less important <span class="small-code" style="color: red;">&lt;h3&gt;</span>, and so on.</p>
+				<p class="tip">Note: Use HTML headings for headings only. Don't use headings to make text BIG or bold.</p>
+				<p class="small-header">Bigger Headings</p>
+				<p>Each HTML heading has a default size. However, you can specify the size for any heading with the <span class="small-code" style="color: red;">style</span> attribute, using the CSS <span class="small-code" style="color: red;">font-size</span> property:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_size')">See an example</button>
+				<p class="small-header">HTML Horizontal Rules</p>
+				<p>The <span class="small-code" style="color: red;">&lt;hr&gt;</span>
+ tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
+ 				<p>The <span class="small-code" style="color: red;">&lt;hr&gt;</span> element is used to separate content (or define a change) in an HTML page:</p>
+ 				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_hr')">See an example</button>
+ 				<p class="small-header">The HTML &lt;head&gt; Element</p>
+ 				<p>The HTML <span class="small-code" style="color: red;">&lt;head&gt;</span> element has nothing to do with HTML headings.</p>
+ 				<p>The <span class="small-code" style="color: red;">&lt;head&gt;</span> element is a container for metadata. HTML metadata is data about the HTML document. Metadata is not displayed.</p>
+ 				<p>The <span class="small-code" style="color: red;">&lt;head&gt;</span> element is placed between the <span class="small-code" style="color: red;">&lt;html&gt;</span> tag and the <span class="small-code" style="color: red;">&lt;body&gt;</span> tag:</p>
+ 				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_headings_head')">See an example</button>
+ 				<p class="tip">Note: Metadata typically define the document title, character set, styles, links, scripts, and other meta information.</p>
+				<p class="tip">For a complete list of all available HTML tags, visit <a href="https://www.w3schools.com/tags/default.asp" style="text-decoration: none;" target="_blank">W3School HTML Tag Reference</a>.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Styles">
+			<header>Styles</header><hr>
+			<article>
+				<p>Setting the style of an HTML element, can be done with the <span class="small-code" style="color: red;">style</span> attribute.</p>
+				<p>The HTML <span class="small-code" style="color: red;">style</span> attribute has the following syntax:</p>
+				<xmp>
+<tagname style="property:value;">					
+				</xmp>
+				<p>The <strong>property</strong> is a CSS property. The <strong>value</strong> is a CSS value.</p>
+				<p class="tip">You will learn more about CSS later in the CSS section.</p>
+				<p class="small-header">HTML Background Color</p>
+				<p>The <span class="small-code" style="color: red;">background-color</span> property defines the background color for an HTML element.</p>
+				<p>This example sets the background color for a page to powderblue:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_background-color')">See an example</button>
+				<p class="small-header">HTML Text Color</p>
+				<p>The <span class="small-code" style="color: red;">color</span> property defines the text color for an HTML element:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_color')">See an example</button>
+				<p class="small-header">HTML Fonts</p>
+				<p>The <span class="small-code" style="color: red;">font-family</span> property defines the font to be used for an HTML element:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_font-family')">See an example</button>
+				<p class="small-header">HTML Text Size</p>
+				<p>The <span class="small-code" style="color: red;">font-size</span> property defines the text size for an HTML element:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_font-size')">See an example</button>
+				<p class="small-header">HTML Text Alignment</p>
+				<p>The <span class="small-code" style="color: red;">text-align</span> property defines the horizontal text alignment for an HTML element:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_styles_text-align')">See an example</button>		
+			</article>
+		</section>
+		<section class="main-section" id="Formatting">
+			<header>Formatting</header><hr>
+			<article>
+        <code></code>
+				<p class="small-header">HTML Formatting Elements</p>
+				<p>HTML also defines special <strong>elements</strong> for defining text with a special <strong>meaning</strong>.</p>
+				<p>HTML uses elements like <span class="small-code" style="color: red;">&lt;b&gt;</span> and <span class="small-code" style="color: red;">&lt;i&gt;</span> for formatting output, like <b>bold</b> or <i>italic</i> text.</p>
+				<p>Formatting elements were designed to display special types of text:</p>
+				<li><span class="small-code" style="color: red;">&lt;b&gt;</span> - Bold text</li>
+				<li><span class="small-code" style="color: red;">&lt;strong&gt;</span> - Important text</li>
+				<li><span class="small-code" style="color: red;">&lt;i&gt;</span> - Italic text</li>
+				<li><span class="small-code" style="color: red;">&lt;em&gt;</span> - Emphasized text</li>
+				<li><span class="small-code" style="color: red;">&lt;mark&gt;</span> - Marked text</li>
+				<li><span class="small-code" style="color: red;">&lt;small&gt;</span> - Small text</li>
+				<li><span class="small-code" style="color: red;">&lt;del&gt;</span> - Deleted text</li>
+				<li><span class="small-code" style="color: red;">&lt;ins&gt;</span> - Inserted text</li>
+				<li><span class="small-code" style="color: red;">&lt;sub&gt;</span> - Subscript text</li>
+				<li><span class="small-code" style="color: red;">&lt;sup&gt;</span> - Superscript text</li>
+				<p class="small-header">HTML &lt;b&gt; and &lt;strong&gt; Elements</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;b&gt;</span> element defines bold text, without any extra importance.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_b')">See an example</button>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;strong&gt;</span> element defines strong text, with added semantic "strong" importance.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_strong')">See an example</button>
+				<p class="small-header">HTML&lt;i&gt; and &lt;em&gt; Elements</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;i&gt;</span> element defines italic text, without any extra importance.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_i')">See an example</button>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;em&gt;</span> element defines emphasized text, with added semantic importance.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_em')">See an example</button>
+				<p class="tip">Note: Browsers display <span class="small-code" style="color: red;">&lt;strong&gt;</span> as <span class="small-code" style="color: red;">&lt;b&gt;</span>, and <span class="small-code" style="color: red;">&lt;em&gt;</span> as <span class="small-code" style="color: red;">&lt;i&gt;</span>. However, there is a difference in the meaning of these tags: <span class="small-code" style="color: red;">&lt;b&gt;</span> and <span class="small-code" style="color: red;">&lt;i&gt;</span> defines bold and italic text, but <span class="small-code" style="color: red;">&lt;strong&gt;</span> and <span class="small-code" style="color: red;">&lt;em&gt;</span> means that the text is "important".</p>
+				<p class="small-header">HTML &lt;small&gt; Element</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;small&gt;</span> element defines smaller text:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_small')">See an example</button>
+				<p class="small-header">HTML &lt;mark&gt; Element</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;mark&gt;</span> element defines <mark>marked</mark> or <mark>highlighted</mark> text:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_mark')">See an example</button>
+				<p class="small-header">HTML &lt;del&gt; Element</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;del&gt;</span> element defines <del>deleted</del> (removed) text.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_del')">See an example</button>
+				<p class="small-header">HTML &lt;ins&gt; Element</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;ins&gt;</span> element defines <ins>inserted</ins> (added) text.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_ins')">See an example</button>
+				<p class="small-header">HTML &lt;sub&gt;  Element</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;sub&gt;</span> element defines <sub>subscripted</sub> text.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sub')">See an example</button>
+				<p class="small-header">HTML &lt;sup&gt; Element</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;sup&gt;</span> element defines <sup>superscripted</sup> text.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_sup')">See an example</button>
+			</article>
+		</section>
+		<section class="main-section" id="Quotations">
+			<header>Quotations</header><hr>
+			<article>
+				<p class="small-header">HTML &lt;q&gt; for Short Quotations</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;q&gt;</span> element defines a short quotation.</p>
+				<p>Browsers usually insert quotation marks around the <span class="small-code" style="color: red;">&lt;q&gt;</span> element.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_q')">See an example</button>
+				<p class="small-header">HTML &lt;blockquote&gt; for Quotations</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;blockquote&gt;</span> element defines a section that is quoted from another source.</p>
+				<p>Browsers usually indent <span class="small-code" style="color: red;">&lt;blockquote&gt;</span> elements.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_blockquote')">See an example</button>
+				<p class="small-header">HTML &lt;abbr&gt; for Abbreviations</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;abbr&gt;</span>element defines an abbreviation or an acronym.</p>
+				<p>Marking abbreviations can give useful information to browsers, translation systems and search-engines.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_abbr')">See an example</button>
+				<p class="small-header">HTML &lt;address&gt; for Contact Information</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;address&gt;</span> element defines contact information (author/owner) of a document or an article.</p>
+				<p>The <span class="small-code" style="color: red;">&lt;address&gt;</span> element is usually displayed in italic. Most browsers will add a line break before and after the element.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_address')">See an example</button>
+				<p class="small-header">HTML &lt;cite&gt; for Work Title</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;cite&gt;</span> element defines the title of a work.</p>
+				<p>Browsers usually display <span class="small-code" style="color: red;">&lt;cite&gt;</span> elements in italic.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_cite')">See an example</button>
+				<p class="small-header">HTML &lt;bdo&gt for Bi-Directional Override</p>
+				<p>The HTML <span class="small-code" style="color: red;">&lt;bdo&gt;</span> element defines bi-directional override.</p>
+				<p>The  <span class="small-code" style="color: red;">&lt;bdo&gt;</span> element is used to override the current text direction:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_formatting_bdo')">See an example</button>
+			</article>
+		</section>
+		<section class="main-section" id="Comments">
+			<header>Comments</header><hr>
+			<article>
+				<p>Comment tags are used to insert comments in the HTML source code.</p>
+				<p class="small-header">HTML Comment Tags</p>
+				<p>You can add comments to your HTML source by using the following syntax:</p>
+				<xmp>
+<!-- Write your comments here -->					
+				</xmp>
+				<p>Notice that there is an exclamation point (!) in the opening tag, but not in the closing tag.</p>
+				<p class="tip">Note: Comments are not displayed by the browser, but they can help document your HTML source code.</p>
+				<p>With comments you can place notifications and reminders in your HTML:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_comment')">See an example</button>
+				<p>Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_comment_out')">See an example</button>
+			</article>
+		</section>
+		<section class="main-section" id="Colors">
+			<header>Colors</header><hr>
+			<article>
+				<p>HTML colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+				<div class="colors-block" style="margin:0 -16px;line-height:80px;color:white;">
+				  <div>
+				    <div class="colors" style="background-color:tomato;">Tomato</div>
+				  </div>
+				  <div>
+				    <div class="colors" style="background-color:orange;">Orange</div>
+				  </div>
+				  <div>
+				    <div class="colors" style="background-color:dodgerblue;">DodgerBlue</div>
+				  </div>
+				  <div>
+				    <div class="colors" style="background-color:mediumseagreen;">MediumSeaGreen</div>
+				  </div>
+				  <div>
+				    <div class="colors" style="background-color:gray;">Gray</div>
+				  </div>
+				  <div>
+				    <div class="colors" style="background-color:slateblue;">SlateBlue</div>
+				  </div>
+				  <div>
+				    <div class="colors" style="background-color:violet;">Violet</div>
+				  </div>
+				  <div>
+				    <div class="colors" style="background-color:lightgray;color:#444444">LightGray</div>
+				  </div>
+				</div>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_names')">See an example</button>
+				<p>HTML supports <a style="color: #757575; " href="https://www.w3schools.com/colors/colors_names.asp" target="_blank">140 standard color names.</p></a>
+				<p class="small-header">Background Color</p>
+				<p>You can set the background color for HTML elements:</p>
+				<h2 style="background-color: DodgerBlue; color: #fff; text-align: center;">Hello World!</h2>
+				<p style="background-color: Tomato; color: #fff; text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet architecto quaerat, tempora mollitia voluptate delectus ut incidunt et natus. At, consectetur? Deserunt corporis, accusantium sit! Temporibus cupiditate, in dolor inventore! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni reprehenderit, optio. Soluta officiis optio, blanditiis excepturi aspernatur labore quae voluptatibus, fugit id! Neque unde perspiciatis vel repudiandae velit porro amet?</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_background')">See an example</button>
+				<p class="small-header">Text Color</p>
+				<p>You can set the color of text:</p>
+				<p style="color: DodgerBlue;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ullam aspernatur debitis, praesentium magnam sequi consectetur nobis similique impedit quas unde beatae ipsa deserunt soluta? Reprehenderit architecto libero commodi aut!</p>
+				<p style="color: MediumSeaGreen">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, consequatur, hic. Mollitia odio repudiandae cupiditate ratione, sint? Expedita ratione a, autem, neque repudiandae excepturi ducimus dolor necessitatibus incidunt distinctio commodi!</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_text')">See an example</button>
+				<p class="small-header">Border Color</p>
+				<h2 style="border: 2px solid Tomato">Hello World!</h2>
+				<h2 style="border:2px solid DodgerBlue;">Hello World!</h2>
+				<h2 style="border:2px solid Violet;">Hello World!</h2>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_border')">See an example</button>
+				<p class="small-header">Color Values</p>
+				<div style="background-color:rgb(255, 99, 71); padding: 10px; margin: 5px; color:#fff; font-weight: bold; text-align: center;">rgb(255, 99, 71)</div>
+				<div style="background-color:#ff6347;padding: 10px; margin: 5px; color:#fff; font-weight: bold; text-align: center;">#ff6347</div>
+				<div style="background-color:hsl(9, 100%, 64%);padding: 10px; margin: 5px; color:#fff; font-weight: bold; text-align: center;">hsl(9, 100%, 64%)</div>
+				<p>Same as color name "Tomato", but 50% transparent:</p>
+				<div style="background-color:rgba(255, 99, 71, 0.5);padding: 10px; margin: 5px; color:#fff; font-weight: bold; text-align: center;">rgba(255, 99, 71, 0.5)</div>
+				<div style="background-color:hsla(9, 100%, 64%, 0.5);padding: 10px; margin: 5px; color:#fff; font-weight: bold; text-align: center;">hsla(9, 100%, 64%, 0.5)</div>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_values')">See an example</button>
+				<p class="small-header">RGB Value</p>
+				<p>In HTML, a color can be specified as an RGB value, using this formula:</p>
+				<p style="font-size: 17px;"><b>rgb(red, green, blue)</b></p>
+				<p>Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.</p>
+				<p>For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.</p>
+				<p>To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).</p>
+				<p>To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255).</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_rgb')">See an example</button>
+				<p>Shades of gray are often defined using equal values for all the 3 light sources:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_rgb_gray')">See an example</button>
+				<p class="small-header">HEX Value</p>
+				<p>In HTML, a color can be specified using a hexadecimal value in the form:</p>
+				<p style="font-size: 17px;"><b>#rrggbb</b></p>
+				<p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</p>
+				<p>For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hex')">See an example</button>
+				<p>Shades of gray are often defined using equal values for all the 3 light sources:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hex_gray')">See an example</button>
+				<p class="small-header">HSL Value</p>
+				<p>In HTML, a color can be specified using hue, saturation, and lightness (HSL) in the form:</p>
+				<p style="font-size: 17px;"><b>hsl(hue, saturation, lightness)</b></p>
+				<p>Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</p>
+				<p>Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.</p>
+				<p>Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsl')">See an example</button>
+				<p class="small-header">Saturation</p>
+				<p>Saturation can be described as the intensity of a color.</p>
+				<p>100% is pure color, no shades of gray</p>
+				<p>50% is 50% gray, but you can still see the color.</p>
+				<p>0% is completely gray, you can no longer see the color.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsl_saturation')">See an example</button>
+				<p class="small-header">Lightness</p>
+				<p>The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsl_lightness')">See an example</button>
+				<p>Shades of gray are often defined by setting the hue and saturation to 0, and adjust the lightness from 0% to 100% to get darker/lighter shades:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsl_gray')">See an example</button>
+				<p class="small-header">RGBA Value</p>
+				<p>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.</p>
+				<p>An RGBA color value is specified with:</p>
+				<p style="font-size: 17px;"><b>rgba(red, green, blue, alpha)</b></p>
+				<p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_rgba')">See an example</button>
+				<p class="small-header">HSLA Value</p>
+				<p>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.</p>
+				<p>An HSLA color value is specified with:</p>
+				<p style="font-size: 17px;"><b>hsla(hue, saturation, lightness, alpha)</b></p>
+				<p>The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_color_hsla')">See an example</button>
+			</article>
+		</section>
+		<section class="main-section" id="CSS">
+			<header>CSS</header><hr>
+			<article>
+				<p class="small-header">Styling HTML with CSS</p>
+				<p><b>CSS</b> stands for <b>C</b>ascading <b>S</b>tyle <b>S</b>heets.</p>
+				<p>CSS describes <b>how HTML elements are to be displayed on screen, paper, or in other media</b>.</p>
+				<p>CSS <b>aves a lot of work</b>. It can control the layout of multiple web pages all at once.</p>
+				<p>CSS can be added to HTML elements in 3 ways:</p>
+				<li><b>Inline</b> - by using the style attribute in HTML elements</li>
+				<li><b>Internal</b> - by using a <span class="small-code" style="color: red;">&lt;style&gt;</span> element in the<span class="small-code" style="color: red;">&lt;head&gt;</span> section</li>
+				<li><b>External</b> - by using an external CSS file</li>
+				<p>The most common way to add CSS, is to keep the styles in separate CSS files. However, here we will use inline and internal styling, because this is easier to demonstrate, and easier for you to try it yourself.</p>
+				<p class="tip">Tip: You can learn much more about CSS in <a style="color: #757575; " href="https://www.w3schools.com/css/default.asp" target="_blank">W3School CSS Tutorial</a>.</p>
+				<p class="small-header">Inline CSS</p>
+				<p>An inline CSS is used to apply a unique style to a single HTML element.</p>
+				<p>An inline CSS uses the style attribute of an HTML element.</p>
+				<p>This example sets the text color of the <span class="small-code" style="color: red;">&lt;h1&gt;</span> element to blue:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_inline')">See an example</button>
+				<p class="small-header">Internal CSS</p>
+				<p>An internal CSS is used to define a style for a single HTML page.</p>
+				<p>An internal CSS is defined in the <span class="small-code" style="color: red;">&lt;head&gt;</span> section of an HTML page, within a <span class="small-code" style="color: red;">&lt;style&gt;</span> element:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_internal')">See an example</button>
+				<p class="small-header">External CSS</p>
+				<p>An external style sheet is used to define the style for many HTML pages.</p>
+				<p><b>With an external style sheet, you can change the look of an entire web site, by changing one file!</b></p>
+				<p>To use an external style sheet, add a link to it in the <span class="small-code" style="color: red;">&lt;head&gt;</span> section of the HTML page:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external')">See an example</button>
+				<p>An external style sheet can be written in any text editor. The file must not contain any HTML code, and must be saved with a .css extension.</p>
+				<p>Here is how the "styles.css" looks:</p>
+				<xmp>
+	body {
+	  background-color: powderblue;
+	}
+	h1 {
+	  color: blue;
+	}
+	p {
+	  color: red;
+	}					
+				</xmp>
+				<p class="small-header">CSS Fonts</p>
+				<p>The CSS <span class="small-code" style="color: red;">color</span> property defines the text color to be used.</p>
+				<p>The CSS <span class="small-code" style="color: red;">font-family</span>  property defines the font to be used.</p>
+				<p>The CSS <span class="small-code" style="color: red;">font-size</span> property defines the text size to be used.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_fonts')">See an example</button>
+				<p class="small-header">CSS Border</p>
+				<p>The CSS <span class="small-code" style="color: red;">border</span> property defines a border around an HTML element:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_borders')">See an example</button>
+				<p class="small-header">CSS Padding</p>
+				<p>The CSS <span class="small-code" style="color: red;">padding</span> property defines a padding (space) between the text and the border:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_padding')">See an example</button>
+				<p class="small-header">CSS Margin</p>
+				<p>The CSS <span class="small-code" style="color: red;">margin</span> property defines a margin (space) outside the border:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_margin')">See an example</button>
+				<p class="small-header">The id Attribute</p>
+				<p>To define a specific style for one special element, add an <span class="small-code" style="color: red;">id</span> attribute to the element</p>
+				<p class="tip-green">&lt;p id="p01"&gt;I am different&lt;/p&gt;</p>
+				<p>then define a style for the element with the specific id:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_id')">See an example</button>
+				<p class="tip">Note: The id of an element should be unique within a page, so the id selector is used to select one unique element!</p>
+				<p class="small-header">The class Attribute</p>
+				<p>To define a style for special types of elements, add a class attribute to the element:</p>
+				<p class="tip-green">&lt;p class="error"&gt;I am different&lt;/p&gt;</p>
+				<p>then define a style for the elements with the specific class:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_class')">See an example</button>
+				<p class="small-header">External References</p>
+				<p>External style sheets can be referenced with a full URL or with a path relative to the current web page.</p>
+				<p>This example uses a full URL to link to a style sheet:</p>
+				<p class="tip-green">&lt;link rel="stylesheet" href="https://www.w3schools.com/html/styles.css"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external_url')">See an example</button>
+				<p>This example links to a style sheet located in the html folder on the current web site:</p>
+				<p class="tip-green">&lt;link rel="stylesheet" href="/html/styles.css"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external_relative')">See an example</button>
+				<p>This example links to a style sheet located in the same folder as the current page:</p>
+				<p class="tip-green">&lt;link rel="stylesheet" href="styles.css"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_css_external')">See an example</button>
+				<p class="tip">You can read more about file paths in the chapter <a href="#File_Paths" style="color: #757575">HTML File Paths.</a></p>
+			</article>
+		</section>
+		<section class="main-section" id="Links">
+			<header>Links</header><hr>
+			<article>
+				<p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+				<p class="small-header">HTML Links - Hyperlinks</p>
+				<p>HTML links are hyperlinks.</p>
+				<p>You can click on a link and jump to another document.</p>
+				<p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+				<p class="tip">Note: A link does not have to be text. It can be an image or any other HTML element.</p>
+				<p class="small-header">HTML Links - Syntax</p>
+				<p>In HTML, links are defined with the <span class="small-code" style="color: red;">&lt;a&gt;</span> tag:</p>
+				<p class="tip-green">&lt;a href="url"&gt;link text&lt;/a&gt;</p>
+				<p class="tip-green">&lt;a href="https://www.w3schools.com/html/">Visit W3Schools&lt;/a&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_w3schools')">See an example</button>
+				<p>The href attribute specifies the destination address (<a href="https://www.w3schools.com/html/" target="_blank">https://www.w3schools.com/html/</a>) of the link.</p>
+				<p>The <b>link</b> text is the visible part (Visit W3Schools).</p>
+				<p>Clicking on the link text will send you to the specified address</p>
+				<p class="tip">Note: Without a forward slash at the end of subfolder addresses, you might generate two requests to the server. Many servers will automatically add a forward slash to the end of the address, and then create a new request.</p>
+				<p class="small-header">Local Links</p>
+				<p>The example above used an absolute URL (a full web address).</p>
+				<p>A local link (link to the same web site) is specified with a relative URL (without https://www....).</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links')">See an example</button>
+				<p class="small-header">HTML Link Colors</p>
+				<p>By default, a link will appear like this (in all browsers):</p>
+				<li>An unvisited link is underlined and blue</li>
+				<li>A visited link is underlined and purple</li>
+				<li>An active link is underlined and red</li>
+				<p>You can change the default colors, by using CSS:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_colors')">See an example</button>
+				<p>Links are often styled as buttons, by using CSS:</p>
+				<a class="mytestbtn" href="javascript:void(0)">This is a link</a>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_button')">See an example</button>
+				<p class="small-header">HTML Links - The target Attribute</p>
+				<p>The <span class="small-code" style="color: red;">target</span> attribute specifies where to open the linked document.</p>
+				<p>The <span class="small-code" style="color: red;">target</span> attribute can have one of the following values:</p>
+				<li><span class="small-code" style="color: red;">_blank</span> - Opens the linked document in a new window or tab</li>
+				<li><span class="small-code" style="color: red;">_self</span> - Opens the linked document in the same window/tab as it was clicked (this is default)</li>
+				<li><span class="small-code" style="color: red;">_parent</span> - Opens the linked document in the parent frame</li>
+				<li><span class="small-code" style="color: red;">_top</span> - Opens the linked document in the full body of the window</li>
+				<li><span class="small-code" style="color: red;">framename</span> Opens the linked document in a named frame</li>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_target')">See an example</button>
+				<p class="small-header">HTML Links - Image as Link</p>
+				<p>It is common to use images as links:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_image')">See an example</button>
+				<p class="tip">Note: border:0; is added to prevent IE9 (and earlier) from displaying a border around the image (when the image is a link).</p>
+				<p class="small-header">Link Titles</p>
+				<p>The <span class="small-code" style="color: red;">title</span> attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_title')">See an example</button>
+				<p class="small-header">HTML Links - Create a Bookmark</p>
+				<p>HTML bookmarks are used to allow readers to jump to specific parts of a Web page.</p>
+				<p>Bookmarks can be useful if your webpage is very long.</p>
+				<p>To make a bookmark, you must first create the bookmark, and then add a link to it.</p>
+				<p>When the link is clicked, the page will scroll to the location with the bookmark.</p>
+				<p>First, create a bookmark with the id attribute:</p>
+				<p class="tip-green">&lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;</p>
+				<p>Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:</p>
+				<p class="tip-green">&lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;</p>
+				<p>Or, add a link to the bookmark ("Jump to Chapter 4"), from another page:</p>
+				<p class="tip-green">&lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_bookmark')">See an example</button>
+				<p class="tip">You can see how a bookmark works by clicking one of the links in the left side, or top side if you're on a phone.</p>
+				<p class="small-header">External Paths</p>
+				<p>External pages can be referenced with a full URL or with a path relative to the current web page.</p>
+				<p>This example uses a full URL to link to a web page:</p>
+				<p class="tip-green">&lt; href="https://www.w3schools.com/html/default.asp"&gt;HTML tutorial&lt;/a&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_url')">See an example</button>
+				<p>This example links to a page located in the html folder on the current web site:</p>
+				<p class="tip-green">&lt; href="/html/default.asp"&gt;HTML tutorial&lt;/a&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external_relative')">See an example</button>
+				<p>This example links to a page located in the same folder as the current page:</p>
+				<p class="tip-green">&lt; href="default.asp"&gt;HTML tutorial&lt;/a&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_links_external')">See an example</button>				
+			</article>
+		</section>
+		<section class="main-section" id="Images">
+			<header>Images</header><hr>
+			<article>
+				<p>Images can improve the design and the appearance of a web page.</p>
+				<img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fmw2.google.com%2Fmw-panoramio%2Fphotos%2Fmedium%2F90300685.jpg&f=1" alt="old church image" height="300px;">
+				<p class="tip-green">&lt;img src="pic_trulli.jpg" alt="Italian Trulli"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_trulli')">See an example</button>
+				<p class="tip-green">&lt;img src="img_girl.jpg" alt="Girl in a jacket"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_girl')">See an example</button>
+				<p class="tip-green">&lt;src="img_chania.jpg" alt="Flowers in Chania"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_chania')">See an example</button>
+				<p class="small-header">HTML Images Syntax</p>
+				<p>In HTML, images are defined with the <span class="small-code" style="color: red;">&lt;img&gt;</span> tag.</p>
+				<p>The <span class="small-code" style="color: red;">&lt;img&gt;</span> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+				<p>The <span class="small-code" style="color: red;">src</span> attribute specifies the URL (web address) of the image:</p>
+				<p class="tip-green">&lt;img src="url"&gt;</p>
+				<p class="small-header">The alt Attribute</p>
+				The <span class="small-code" style="color: red;">alt</span> attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+				<p>The value of the <span class="small-code" style="color: red;">alt</span> attribute should describe the image:</p>
+				<p class="tip-green">&lt;img src="img_chania.jpg" alt="Flowers in Chania"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_alt_chania')">See an example</button>
+				<p>If a browser cannot find an image, it will display the value of the <span class="small-code" style="color: red;">alt</span> attribute:</p>
+				<p class="tip-green">&lt;img src="wrongname.gif" alt="Flowers in Chania"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_wrongname')">See an example</button>
+				<p class="tip">Note: The <span class="small-code" style="color: red;">alt</span> attribute is required. A web page will not validate correctly without it.</p>
+				<p class="small-header">Image Size - Width and Height</p>
+				<p>You can use the <span class="small-code" style="color: red;">style</span> attribute to specify the width and height of an image.</p>
+				<p class="tip-green">&lt;img src="img_girl.jpg" alt="Girl in a jacket" style="width:500px;height:600px;"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_size')">See an example</button>
+				<p>Alternatively, you can use the <span class="small-code" style="color: red;">width</span> and <span class="small-code" style="color: red;">height</span> attributes:</p>
+				<p class="tip-green">&lt;img src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_attributes')">See an example</button>
+				<p>The <span class="small-code" style="color: red;">width</span> and <span class="small-code" style="color: red;">height</span> attributes always defines the width and height of the image in pixels.</p>
+				<p class="tip">Note: Always specify the <span class="small-code" style="color: red;">width</span> and <span class="small-code" style="color: red;">height</span> of an image. If width and height are not specified, the page might flicker while the image loads.</p>
+				<p class="small-header">Width and Height, or Style?</p>
+				<p>The <span class="small-code" style="color: red;">width</span>, <span class="small-code" style="color: red;">height</span>, and <span class="small-code" style="color: red;">style</span> attributes are valid in HTML5.</p>
+				<p>However, W3Schools suggests using the <span class="small-code" style="color: red;">style</span> attribute. It prevents styles sheets from changing the size of images:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_style')">See an example</button>
+				<p class="small-header">Images in Another Folder</p>
+				<p>If not specified, the browser expects to find the image in the same folder as the web page.</p>
+				<p>However, it is common to store images in a sub-folder. You must then include the folder name in the <span class="small-code" style="color: red;">src</span> attribute:</p>
+				<p class="tip-green">&lt;img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_folder')">See an example</button>
+				<p class="small-header">Images on Another Server</p>
+				<p>Some web sites store their images on image servers.</p>
+				<p>Actually, you can access images from any web address in the world:</p>
+				<p class="tip-green">&lt;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_w3schools')">See an example</button>
+				<p class="small-header">Animated Images</p>
+				<p>HTML allows animated GIFs:</p>
+				<p class="tip-green">&lt;img src="programming.gif" alt="Computer Man" style="width:48px;height:48px;"&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_hackman')">See an example</button>
+				<p class="small-header">Image as a Link</p>
+				<p>To use an image as a link, put the <span class="small-code" style="color: red;">&lt;img&gt;</span> tag inside the <span class="small-code" style="color: red;">&lt;a&gt;</span> tag:</p>
+				<p class="tip-green">&lt;a href="default.asp"&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;
+				  &lt;img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;border:0;"&gt;
+				<br>&lt;/a&gt;</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_link')">See an example</button>
+				<p class="tip">Note: <span class="small-code" style="color: red;">border:0;</span> is added to prevent IE9 (and earlier) from displaying a border around the image (when the image is a link).</p>
+				<p class="small-header">Image Floating</p>
+				<p>Use the CSS <span class="small-code" style="color: red;">float</span> property to let the image float to the right or to the left of a text:</p>
+				<p class="tip-green">&lt;p&gt;&lt;img src="smiley.gif" alt="Smiley face" style="float:right;width:42px;height:42px;"&gt;
+The image will float to the right of the text.&lt;/p&gt;<br><br>&lt;p&gt;&lt;img src="smiley.gif" alt="Smiley face" style="float:left;width:42px;height:42px;"&gt;
+The image will float to the right of the text.&lt;/p&gt;</p>
+				<p class="small-header">Image Maps</p>
+				<p>The <span class="small-code" style="color: red;">&lt;map&gt;</span> tag defines an image-map. An image-map is an image with clickable areas.</p>
+				<p>In the image below, click on the computer, the phone, or the cup of coffee:</p>
+				<div class="map-img">
+					<img src="https://www.w3schools.com/html/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+					<map name="workmap">
+					  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+					  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+					  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+					</map>
+				</div>
+				<button id="button"  onClick="window.open('https://<p>The name attribute of the <map> tag is associated with the <img>'s usemap attribute and creates a relationship between the image and the map.</p>www.w3schools.com/html/tryit.asp?filename=tryhtml_images_map2')">See an example</button>
+				<p>The name attribute of the <span class="small-code" style="color: red;">&lt;map&gt;</span> tag is associated with the <span class="small-code" style="color: red;">&lt;img&gt;</span>'s usemap attribute and creates a relationship between the image and the map.</p>	
+				<p>The <span class="small-code" style="color: red;">&lt;map&gt;</span> element contains a number of <span class="small-code" style="color: red;">&lt;area&gt;</span> tags, that define the clickable areas in the image-map.</p>
+				<p class="small-header">Background Image</p>	
+				<p>To add a background image on an HTML element, use the CSS property <span class="small-code" style="color: red;">background-image</span>:</p>		
+				<p>To add a background image on a web page, specify the background-image property on the BODY element:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background')">See an example</button>
+				<p>To add a background image on a paragraph, specify the background-image property on the P element:</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_background2')">See an example</button>
+				<p class="small-header">The &lt;picture&gt; Element</p>
+				<p>HTML5 introduced the <span class="small-code" style="color: red;">&lt;picture&gt;</span> element to add more flexibility when specifying image resources.</p>
+				<p>The <span class="small-code" style="color: red;">&lt;picture&gt;</span> element contains a number of <span class="small-code" style="color: red;">&lt;source&gt;</span> elements, each referring to different image sources. This way the browser can choose the image that best fits the current view and/or device.</p>
+				<p>Each <span class="small-code" style="color: red;">&lt;source&gt;</span> element have attributes describing when their image is the most suitable.</p>
+				<p>The browser will use the first <span class="small-code" style="color: red;">&lt;source&gt;</span> element with matching attribute values, and ignore any following <span class="small-code" style="color: red;">&lt;source&gt;</span> elements.</p>
+				<button id="button"  onClick="window.open('https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_picture')">See an example</button>
+				<p class="tip">Note: Always specify an <span class="small-code" style="color: red;">&lt;img&gt;</span> element as the last child element of the <span class="small-code" style="color: red;">&lt;picture&gt;</span> element. The <span class="small-code" style="color: red;">&lt;img&gt;</span> element is used by browsers that do not support the <span class="small-code" style="color: red;">&lt;picture&gt;</span> element, or if none of the <span class="small-code" style="color: red;">&lt;source&gt;</span> tags matched.</p>
+				<p class="small-header">HTML Screen Readers</p>
+				<p>A screen reader is a software program that reads the HTML code, converts the text, and allows the user to "listen" to the content. Screen readers are useful for people who are visually impaired or learning disabled.</p>
+				<p class="tip">Note: Loading images takes time. Large images can slow down your page. Use images carefully.</p>
+			</article>
+		</section>
+		<section class="main-section" id="Reference">
+			<header>Reference</header>
+			<article><p>The documentation of this page is taken from <a href="https://www.w3schools.com/default.asp">W3Schools</a>.</p></article>
+		</section>
+	</main>
+</body>
+</html>
